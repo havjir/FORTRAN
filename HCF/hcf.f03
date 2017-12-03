@@ -26,12 +26,12 @@ program hcf
       MODNUM = MOD(ANUM , FACTOR);
       
       if(MODNUM == 0) then
-         write(*,*) 'H.C.F.: ', FACTOR;
+         write(*,1001) 'H.C.F.: ', FACTOR;
          exit;
       endif
       
    end do
    
-   !1001  format(a, i)
+   1001  format(A, I3);
 
 end program hcf
